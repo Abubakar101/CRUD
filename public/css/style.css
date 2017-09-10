@@ -1,0 +1,190 @@
+html {
+  font-family: "Saira", sans-serif;
+  background-color: #f1f1f1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  width: 50%;
+}
+.topNav {
+  background: #2d2d2d;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 15px;
+}
+.topNav > div {
+  padding: 15px 10PX;
+  margin: 0 5px;
+  display: block;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.mainContainer {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #ccc;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: #fff;
+  background: linear-gradient(
+      0deg,
+      rgba(39, 192, 230, 0.5) 0%,
+      rgba(122, 100, 22, 0.4) 100%
+    ),
+    url("https://wallpapercave.com/wp/DgmamTL.jpg");
+  background-position: center center;
+}
+
+.mainPage .welcomeText,
+.afterLoginContainer .welcomeText,
+.infoContainer .infoTitle {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 60px;
+  width: 700px;
+  margin: auto;
+  line-height: 80px;
+  color: #fff;
+}
+
+.mainPage .buttons > div {
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 8px 15px;
+  margin: 0 5px;
+  border-radius: 50px;
+  transition: All 0.5s ease;
+}
+
+.topNav > div:hover,
+.mainPage .buttons > div:hover {
+  background-color: #37c88d;
+  color: #fff;
+  cursor: pointer;
+  transform: scale(1.1);
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.results .topBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #ccc;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  color: #fff;
+  background: linear-gradient(
+      0deg,
+      rgba(39, 192, 230, 0.5) 0%,
+      rgba(122, 100, 22, 0.4) 100%
+    ),
+    url("https://wallpapercave.com/wp/DgmamTL.jpg");
+  background-position: center center;
+}
+
+.results .data {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  color: #fff;
+  background: black;
+}
+
+.results .data .info {
+  min-height: 500px;
+  width: 98%;
+  align-items: flex-start;
+  text-align: center;
+  background: #ccc;
+  color: black;
+  background: white;
+  border-radius: 10px;
+}
+
+.frame {
+  display: flex;
+  flex-wrap: wrap;
+}
+.results .data #addBtn {
+  justify-content: flex-end;
+  background: white;
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+  outline: none;
+  transition: All 0.5s ease;
+}
+
+.results .data #addBtn:hover {
+  background-color: #37c88d;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 100%;
+  font-weight: bold;
+  outline: none;
+}
+
+.infoDelBtn:hover {
+  background-color: #37c88d;
+  border-radius: 5px;
+  border: none;
+  width: 23px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.results .info .column {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 3px;
+  font-size: 20px;
+}
+.results .info .column input {
+  font-size: 15px;
+}
+
+/* Footer */
+.bottom {
+  background-color: #333;
+  color: #aaa;
+  font-size: 14px;
+  padding: 10px;
+}
+.bottom:hover {
+  color: #00ffaa;
+  transition: all 0.5s ease-in-out;
+}
+.bottom:hover span {
+  color: red;
+  transition: all 0.5s ease-in-out;
+  animation: beat 1s linear infinite;
+}
+
+@keyframes beat {
+  50% {
+    opacity: 0;
+  }
+}

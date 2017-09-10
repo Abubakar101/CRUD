@@ -1,0 +1,33 @@
+<% include ../partials/top.ejs %>
+
+
+
+
+    <div class="results">
+        <div class="topBar"></div>
+        <div class="data">
+            <div class="info">
+                <div class="frame">
+                    <% for (let wealth of data) { %>
+                        <div class="column">
+                            <form action="/wealths/<%= wealth.id %>?_method=PUT " method="Post">
+                                <div class="wealth">Wea. :<input type="text" name="wealth" value="<%= wealth.wealth%>" readonly onblur="addReadOnly(this)"></div>
+                                <div class="population">Pop. :<input type="text" name="population" value="<%= wealth.population%>" readonly onblur="addReadOnly(this)"></div>
+                                <div class="age">Age. :<input type="text" name="age" value="<%= wealth.age%>" readonly onblur="addReadOnly(this)"></div>
+                                <div class="ethnicity">Eth. :<input type="text" name="ethnicity" value="<%= wealth.ethnicity%>" readonly onblur="addReadOnly(this)"></div>
+                                <div class="neighborhood">Nei. :<input type="text" name="neighborhood" value="<%= wealth.neighborhood%>" readonly onblur="addReadOnly(this)"></div>
+                            </form>
+                            <form action="/wealths/<%= wealth.id %>?_method=Delete" method="Post">
+                                <button class="infoDelBtn">-</button>
+                            </form>
+                        </div>
+                        <% } %>
+                            <form method='POST' action='/wealths'>
+                                <button id="addBtn">+</button>
+                            </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <% include ../partials/bottom.ejs %>
